@@ -9,10 +9,10 @@ const ListofProducts = ({ products, addToCart }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-3 m-2 mt-10 lg:gap-8 lg:grid-cols-4 lg:m-5">
+    <div className="grid grid-cols-2 gap-3 items-center m-2 mt-16 lg:mt-16 lg:grid lg:grid-cols-3  lg:m-5 md:grid-cols-3 xl:grid-cols-4">
       {products.map((product) => (
         <div key={product.id} className="relative">
-          <img className="h-60 w-60" src={product.src} alt={product.name} />
+          <img className="h-60 w-60  lg:ml-14 " src={product.src} alt={product.name} />
           <div className="text-center">
             <span className="font-semibold">{product.name}</span>
             <br />
