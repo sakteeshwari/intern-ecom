@@ -19,7 +19,7 @@ const ListofProducts = ({ products, addToCart }) => {
             <button
               onClick={() => handleAddToCart(product)}
               disabled={disabledButtons[product.id]}
-              className={`bg-purple-500 mt-3 p-2 rounded text-white hover:bg-purple-400 ${
+              className={`bg-cyan-600 mt-3 p-2 rounded text-white hover:bg-cyan-600 ${
                 disabledButtons[product.id] ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
